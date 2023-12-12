@@ -1,6 +1,6 @@
 # Asteroid-Game
 
-This game was presented by my Proffesor Andy Harris at Ball State University's biennial Symposium on Games where over
+This game was presented by my Proffessor Andy Harris at Ball State University's biennial Symposium on Games where over
 100 participants talked about games. There were 8 presentations, 6 game demos, and keynote adress by Tyler Thompson the
 creator of Cattalis series of video games.
 
