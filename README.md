@@ -11,3 +11,5 @@ gets hit three times you lose. In order to win you have to get a score of 50. Yo
 asteriod is 10 points. 
 
 Run the nolan.meyer_gameEngine2.py file to play the game!
+
+All images/sounds used are documented in the source code. 
