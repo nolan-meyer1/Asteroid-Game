@@ -13,3 +13,10 @@ asteriod is 10 points.
 Run the nolan.meyer_gameEngine2.py file to play the game!
 
 All images/sounds used are documented in the source code. 
+
+Game Images:
+
+<img width="637" alt="Screenshot 2024-02-07 at 6 42 31 PM" src="https://github.com/nolan-meyer1/Asteroid-Game/assets/145584308/3b6ed132-4167-42dd-897a-08294f3b2131">
+<img width="641" alt="Screenshot 2024-02-07 at 6 43 08 PM" src="https://github.com/nolan-meyer1/Asteroid-Game/assets/145584308/d257b3e0-543e-49eb-8304-46c33d13c4e4">
+<img width="637" alt="Screenshot 2024-02-07 at 6 43 41 PM" src="https://github.com/nolan-meyer1/Asteroid-Game/assets/145584308/cb2b03d6-546f-4917-bdfc-95f4c5bef688">
+<img width="633" alt="Screenshot 2024-02-07 at 6 42 58 PM" src="https://github.com/nolan-meyer1/Asteroid-Game/assets/145584308/cde09920-6858-4fc6-a9b6-c8c279a4b29c">
