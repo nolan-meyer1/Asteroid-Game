@@ -14,7 +14,7 @@ Run the nolan.meyer_gameEngine2.py file to play the game!
 
 All images/sounds used are documented in the source code. 
 
-Game Images:
+### Game Images
 
 <img width="637" alt="Screenshot 2024-02-07 at 6 42 31 PM" src="https://github.com/nolan-meyer1/Asteroid-Game/assets/145584308/3b6ed132-4167-42dd-897a-08294f3b2131">
 <img width="641" alt="Screenshot 2024-02-07 at 6 43 08 PM" src="https://github.com/nolan-meyer1/Asteroid-Game/assets/145584308/d257b3e0-543e-49eb-8304-46c33d13c4e4">
