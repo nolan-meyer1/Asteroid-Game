@@ -10,9 +10,15 @@ Your goal is to destroy asteriods and not let them hit the earth. If they hit th
 gets hit three times you lose. In order to win you have to get a score of 50. You get points by destroying the asteriods. Each
 asteriod is 10 points. 
 
-Run the nolan.meyer_gameEngine2.py file to play the game!
+Run the nolan.meyer_gameEngine2_blackbelt.py file to play the game!
 
 All images/sounds used are documented in the source code. 
+
+### Links to Code
+| Number | Item | Description |
+|:----: |-------| ----------|
+|G1|[Start File](https://github.com/nolan-meyer1/Asteroid-Game/blob/main/Asteriod%20Game/nolan.meyer_gameEngine2_blackbelt.py)|This is the file you should run to play the game| 
+|G2|[Game Engine](https://github.com/nolan-meyer1/Asteroid-Game/blob/main/Asteriod%20Game/simpleGE.py)|This is the version of the game engine used to create this project|
 
 ### Game Images
 
