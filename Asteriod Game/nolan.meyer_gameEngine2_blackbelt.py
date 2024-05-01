@@ -170,6 +170,10 @@ class Game(simpleGE.Scene):
     
     #Checks for buttons being clicked
     def update(self):
+        """
+        Checks if the start,quit, or restart
+        button is clicked.
+        """
 
         if self.quitButton.clicked:
             
@@ -252,6 +256,13 @@ class Spaceship(simpleGE.SuperSprite):
         self.canMove = False
 
     def checkEvents(self):
+        """
+        Checks if the spaceship can moved. If it can based
+        off what buttons they click it will set that to certain
+        images, rotate it, and add forces. Also checks for if you
+        want to shoot a bullet, and runs the checkHealth, checkEarthHealth,
+        and checkScore methods. 
+        """
 
         if self.canMove:
 
@@ -279,6 +290,11 @@ class Spaceship(simpleGE.SuperSprite):
     
    
     def checkHealth(self):
+        """
+        Checks what health the spaceship is at 
+        and moves the health images off the screen
+        based off how many hearts you have. 
+        """
 
         if self.health == 2:
             self.scene.spaceshipHeart1.x = -100
@@ -306,6 +322,12 @@ class Spaceship(simpleGE.SuperSprite):
 
     
     def checkEartHealth(self):
+        """
+        Checks what the earth's health is at 
+        and moves the health images off how many
+        times the earth has been hit.
+        """
+        
 
         if self.scene.earthHealth == 2:
 
@@ -336,6 +358,10 @@ class Spaceship(simpleGE.SuperSprite):
                 self.scene.playSoundTimes += 1
         
     def checkScore(self):
+        """
+        Checks what the score is and ends the game
+        if it is equal to 50. 
+        """
 
         if self.scene.score == 50:
             self.scene.win.x = 320
@@ -366,12 +392,20 @@ class Asteriod(simpleGE.BasicSprite):
 
     
     def reset(self):
+        """
+        Resets the asteriod's x,y, and fallSpeed.
+        """
         self.x = random.randint(0,640)
         self.y = 20
         self.fallSpeed = 5
 
 
     def checkEvents(self):
+        """
+        If the asteriod can fall subtract the Y
+        from the fall speed allowing it to fall
+        and check for collision. 
+        """
 
         if self.fall == True:
             self.y += self.fallSpeed
@@ -380,6 +414,10 @@ class Asteriod(simpleGE.BasicSprite):
 
     
     def checkCollision(self):
+        """
+        Checks if the asteriod collides with the 
+        spaceship 
+        """
 
         if self.collidesWith(self.scene.spaceship):
             self.scene.spaceship.health -= 1
@@ -392,6 +430,9 @@ class Asteriod(simpleGE.BasicSprite):
                 self.reset()
 
     def checkBounds(self):
+        """
+        If the asteriod is off the screen it resets it.
+        """
 
         if self.rect.bottom > self.scene.background.get_height():
             self.reset()
@@ -413,6 +454,12 @@ class Bullet(simpleGE.SuperSprite):
         
 
     def shoot(self):
+        """
+        Shoots the bullet by first checking if hte bullet is off the screen.
+        If it is it will play the fire sound, set the position to the spaceships
+        position. Set the speed to 10, and lastly, set the rotation angle to the
+        spacehsips rotation angle. 
+        """
         
         if self.x < 0:
             if self.y < 0:
@@ -423,13 +470,27 @@ class Bullet(simpleGE.SuperSprite):
                 
             
     def reset(self):
+        """
+        Resets the bullet by settings is position off the screen,
+        and setting its speed to zero. 
+        """
         self.setPosition((-100,-100))
         self.setSpeed(0)
 
     def checkEvents(self):
+        """
+        Runs the collision checker 30 times
+        every frame. 
+        """
+
         self.checkCollision()
     
     def checkCollision(self):
+        """
+        Checks if the bullet collides with something. If it 
+        does it will reset the bullet, put an explosion image
+        to where the collision took place, and update the score. 
+        """
 
         if self.collidesWith(self.scene.asteriod):
             self.scene.explosion.x = self.scene.asteriod.x
